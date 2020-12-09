@@ -29,7 +29,7 @@ test_set = image_dataset_from_directory(test_path,batch_size=batch, labels='infe
 
 
 #Carregando a rede
-#As outras redes podem ser importadas VGG16, MobileNetB6
+#As outras redes podem ser importadas VGG16, MobileNetV2
 model = EfficientNetB6(include_top=False,input_shape=(355,370,3), pooling = 'avg', weights='imagenet')
 
 train_feats=[]
